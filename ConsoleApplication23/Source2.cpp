@@ -44,9 +44,19 @@ public:
 
 	bool operator == (const Integer & x) { // перегрузка ==
 		return value == x.value;
+    }
 
+	bool operator != (const Integer & x) { // перегрузка ==
+		return value != x.value;
 	}
 
+	bool operator > (const Integer & x) { // перегрузка ==
+		return value > x.value;
+	}
+
+	bool operator < (const Integer & x) { // перегрузка ==
+		return value < x.value;
+	}
 };
 
 
