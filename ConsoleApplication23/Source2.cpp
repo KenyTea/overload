@@ -42,6 +42,11 @@ public:
 		return old;
 	}
 
+	bool operator == (const Integer & x) { // перегрузка ==
+		return value == x.value;
+
+	}
+
 };
 
 
@@ -58,6 +63,11 @@ int main() {
 	cout << endl;
 	cout << a.value++ << endl;
 	cout << a.value << endl;
+
+	Integer A(5), B(5), C(6);
+	cout << endl;
+	cout << (A == B) << endl;
+	cout << (A == C) << endl;
 
 
 
