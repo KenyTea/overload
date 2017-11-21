@@ -12,7 +12,7 @@ int fib(int n) {
 }
 
 int fib2(const int n) {
-	int *a = new int[n + 1];
+	int *a = new int[n];
 	a[0] = 1;
 	a[1] = 1;
 
@@ -50,6 +50,10 @@ int main() {
 
 	for (int i = 0; i < 20; i++)
 		cout << "Fibanachi " << i << "     " << fib(i) << endl;
+	cout << endl;
+	cout << endl;
+	cout << fib(20) << endl;
+
 	system("pause");
 	return 0;
 }
