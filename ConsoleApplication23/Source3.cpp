@@ -33,11 +33,11 @@ public:
 		++this->value;
 	}*/
 
-	  Integer(const Integer && i) { // конструктор переноса konstruktor perenosa
+	explicit Integer(const Integer && i) { // конструктор переноса konstruktor perenosa
 		value = move(i.value);
 	}
 
-	Integer & operator ++ () {
+	 Integer & operator ++ () {
 		++this->value;      // оператор перегрузки инкримента (префиксный)
 		return *this;
 	}
@@ -76,7 +76,13 @@ public:
 		return value;   // operator peregruzka preobrazovaniya tipiv
 	}
 
+	friend void print(Integer &i);  // friend functions print
 };
+
+void print(Integer& i){ // realisation friend functions print
+    cout << i.value;
+}
+
 
 class Progression {
 public:
@@ -116,6 +122,8 @@ int main() {
 	double z = (double)a; // peregruzka preobrazovaniya tipiv
 	char b = (int)a;
 
+	Integer x(5);  //// friend functions print
+	print(x);
 
 	Progression p = { 5,2 };
 	cout << p[5] << endl;
@@ -123,3 +131,4 @@ int main() {
 
 	return 0;
 }
+
