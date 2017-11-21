@@ -52,7 +52,8 @@ int main() {
 		cout << "Fibanachi " << i << "     " << fib(i) << endl;
 	cout << endl;
 	cout << endl;
-	cout << fib(20) << endl;
+	
+	cout << "fin = " << fib(19) << endl;
 
 	system("pause");
 	return 0;
