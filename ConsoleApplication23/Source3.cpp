@@ -63,11 +63,25 @@ public:
 	bool operator < (const Integer & x) { // перегрузка ==
 		return value < x.value;
 	}
+
+	
+};
+
+class Progression {
+public:
+	int a1,b;
+	int operator [](int i) {
+		return a1 + (i - 1) * b;
+	}
+	int operator ()(int i) {
+		return (2 * a1 + b * (i - 1)) * i / 2;
+	}
+
 };
 
 
 int main() {
-	Integer a(5);
+	/*Integer a(5);
 	Integer b(6);
 
 	Integer c = a + b;
@@ -85,9 +99,11 @@ int main() {
 	cout << (A == B) << endl;
 	cout << (A == C) << endl;
 
-	Integer b = move(a); // конструктор переноса konstruktor perenosa
+	Integer b = move(a); // конструктор переноса konstruktor perenosa*/
 
-
+	Progression p = { 5,2 };
+	cout << p[5] << endl;
+	cout << p(5) << endl;
 
 	return 0;
 }
