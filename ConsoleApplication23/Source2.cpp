@@ -32,29 +32,29 @@
 //	}*/
 //
 //	Integer & operator ++ () {
-//		++this->value;      // оператор перегрузки инкримента (префиксный)
+//		++this->value;      // оператор перегрузки инкримента (префиксный) operator peregruzki inkrimenta (prefix)
 //		return *this;
 //	}
 //
 //	Integer & operator ++ (int) {
-//		Integer old(value);  // оператор перегрузки инкримента (постфиксный)
+//		Integer old(value);  // оператор перегрузки инкримента (постфиксный)  operator peregruzki inkrimenta (postfix)
 //		value++;
 //		return old;
 //	}
 //
-//	bool operator == (const Integer & x) { // перегрузка ==
+//	bool operator == (const Integer & x) { // перегрузка == peregruzka ==
 //		return value == x.value;
 //    }
 //
-//	bool operator != (const Integer & x) { // перегрузка ==
+//	bool operator != (const Integer & x) { // перегрузка != peregruzka != 
 //		return value != x.value;
 //	}
 //
-//	bool operator > (const Integer & x) { // перегрузка ==
+//	bool operator > (const Integer & x) { // перегрузка > peregruzka >
 //		return value > x.value;
 //	}
 //
-//	bool operator < (const Integer & x) { // перегрузка ==
+//	bool operator < (const Integer & x) { // перегрузка < peregruzka <
 //		return value < x.value;
 //	}
 //};
