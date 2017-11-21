@@ -5,7 +5,7 @@
 //
 //// дружественные методы класса  https://www.youtube.com/watch?v=c3FJv4v7NlU
 //
-//class Homan; // указываем на всякий случай
+//class Human; // указываем на всякий случай
 //class Apple;  // сообщаем классу Apple о присутствии  выше класса Human
 //
 //class Human {
