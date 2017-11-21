@@ -64,7 +64,18 @@ public:
 		return value < x.value;
 	}
 
-	
+	explicit operator double() {
+		return value;   // operator peregruzka preobrazovaniya tipiv
+	}
+
+	explicit operator int() {
+		return value;   // operator peregruzka preobrazovaniya tipiv
+	}
+
+	explicit operator char() {
+		return value;   // operator peregruzka preobrazovaniya tipiv
+	}
+
 };
 
 class Progression {
@@ -100,6 +111,11 @@ int main() {
 	cout << (A == C) << endl;
 
 	Integer b = move(a); // конструктор переноса konstruktor perenosa*/
+
+	Integer a(5);
+	double z = (double)a; // peregruzka preobrazovaniya tipiv
+	char b = (int)a;
+
 
 	Progression p = { 5,2 };
 	cout << p[5] << endl;
