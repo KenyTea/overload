@@ -3,6 +3,10 @@
 
 using namespace std;
 
+class Test {    // test for friend function
+	int x;
+
+};
 
 class Integer {
 public:
@@ -77,6 +81,9 @@ public:
 	}
 
 	friend void print(Integer &i);  // friend functions print
+
+
+	friend class Test;   // test for friend function
 };
 
 void print(Integer& i){ // realisation friend functions print
