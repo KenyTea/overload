@@ -26,7 +26,9 @@ public:
 	char *str;
 	static int count;
 	int size;
-	String(int size = 80) { // default constructor
+	
+	String() { // default constructor
+		this->size = 80;
 		str = new char[size];
 		count++;
 	}
@@ -75,9 +77,11 @@ int String::count = 0;
 int main() {
 
 	String a();
-	String a(20);
+	String b(20);
+	b.enter();
+	b.show();
 
-	cout << String::count;
+	cout <<"Creatóâ objects: " << String::count << endl;
 	system("pause");
 	return 0;
 }
