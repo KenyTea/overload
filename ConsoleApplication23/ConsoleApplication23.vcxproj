@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="21,11,17.cpp" />
+    <ClCompile Include="22,11,17.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Source1.cpp" />
     <ClCompile Include="Source2.cpp" />
