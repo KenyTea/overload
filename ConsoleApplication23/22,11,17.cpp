@@ -27,17 +27,17 @@ public:
 	static int count;
 	int size;
 	
-	String() { // default constructor
-		this->size = 80;
+	String(int size = 80) { // default constructor
+		this->size = size;
 		str = new char[size];
 		count++;
 	}
 
-	String(int x) {
+	/*String(int x) {
 		str = new char[x];
 		size = x;
 		count++;
-	}
+	}*/
 
 	//String(string *a) {
 	// Long = new int(string(a));
@@ -77,7 +77,7 @@ int String::count = 0;
 
 int main() {
 
-	String a();
+	String a;
 	String b(20);
 	b.enter();
 	b.show();
