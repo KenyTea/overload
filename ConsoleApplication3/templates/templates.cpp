@@ -44,6 +44,8 @@ using namespace std;
 		return max;
 	}
 
+
+
 	template <typename T>
 	void quicksort(T a[], int size) { // sort
 		if (size < 1) {
@@ -82,6 +84,27 @@ using namespace std;
 		//}
 	}
 
+
+
+	template <typename T>
+	T getfinedOfArrayElemint(T a[], int x, int size) {
+		if (size < 1) {
+			cout << "Array is empty";
+		}
+		
+		for (int i = 0; i < size; i++)
+		{
+			if (a[i] ==  x) {
+				cout << endl;
+				cout << "your number is  " << x << endl;
+			}
+			
+		}
+		cout << endl;
+		 cout << "This number is undefined" << endl;
+		 return x;
+	}
+
 int main() {
 	//int a[5] = { 1,2,3,4,5 };   //(5+4+3+2+1) / 5 = 3
 	//double b[5] = { 6.,7.,8.,9.,10. };
@@ -99,6 +122,8 @@ int main() {
 	cout << "max " << getMAXOfArrayElemint(a, 5) << endl;
 
 	 quicksort(a, 5);
+
+	 getfinedOfArrayElemint(a, 555, 5);
 
 	system("pause");
 	return 0;
