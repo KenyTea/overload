@@ -87,7 +87,7 @@ using namespace std;
 
 
 	template <typename T>
-	T getfinedOfArrayElemint(T a[], int x, int size) {
+	T getfinedOfArrayElemint(T a[], int x, int size) { // fined
 		if (size < 1) {
 			cout << "Array is empty";
 		}
